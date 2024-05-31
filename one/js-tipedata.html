@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evos brow</title>
+  </head>
+  <body>
+    <h1>for my self</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <button type="" id="button">Here.</button>
+
+    <script>
+      //1
+      const person = {
+        firstName: "muhammad aidil",
+        lastName: "arif",
+        age: 18,
+      };
+
+      document.getElementById("demo3").innerHTML =
+        person.firstName + " " + person.lastName + " umur " + person.age;
+      //2
+      const cars = ["Yamaha", "Honda", "Suzuki", "Kawasaki"];
+
+      document.getElementById("demo2").innerHTML = cars[1];
+      // 3
+      let question1 = 100;
+      let question2 = "nothing mom";
+      let question3 = false;
+
+      document.getElementById("demo1").innerHTML =
+        question1 + "<br>" + question2 + "<br>" + question3;
+      // 4
+      document.getElementById("button").addEventListener("click", function () {
+        alert("hallo world");
+      });
+    </script>
+  </body>
+</html>

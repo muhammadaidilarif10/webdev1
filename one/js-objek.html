@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>...</title>
+  </head>
+  <body>
+    <button type="button" id="demo">kirim</button>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+      document.getElementById("demo").addEventListener("click", function () {
+        alert("hallo");
+      });
+
+      const person = {
+        nama: "muhammad aidil arif",
+        umur: 18,
+        pekerjaan: {
+          work1: "softwer engenering",
+          work2: "web development",
+          work3: "data analis",
+        },
+      };
+
+      delete person[""];
+
+      person.domisili = "medan";
+      document.getElementById("demo2").innerHTML =
+        " ada anak bernama " +
+        person["nama"] +
+        " dia bekerja sebagai " +
+        person["pekerjaan"]["work3"] +
+        " dan dia berumur " +
+        person["umur"] +
+        " lalu dia tinggal di " +
+        person["domisili"];
+    </script>
+  </body>
+</html>

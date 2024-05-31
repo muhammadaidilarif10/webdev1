@@ -1,0 +1,227 @@
+/* css Variables */
+:root {
+  --sage: #3a4d39;
+  --sage2: #4f6f52;
+  --sage3: #739072;
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --shadow2: 0 1px 5px rgba(202, 197, 197, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background: var(--dark);
+  line-height: 1.4;
+  margin: 30px 50px;
+}
+
+.btn {
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.6rem;
+  text-decoration: none;
+  border: 0;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.btn:hover,
+.btn1:hover {
+  background: var(--sage);
+  transition: 1.5s;
+}
+.btn1 {
+  background: var(--dark);
+  color: var(--light);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: 0;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* css navbar */
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+  background-color: var(--sage2);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--light);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow2);
+  border-radius: 5px;
+}
+
+.main-nav a:hover {
+  background-color: var(--sage);
+  transition: 2s;
+  color: var(--light);
+}
+
+.span {
+  color: var(--dark);
+  box-shadow: var(--shadow2);
+}
+
+/* top container */
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "showcase showcase top-box-a"
+    "showcase showcase top-box-b";
+}
+
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  background-color: var(--sage2);
+  border-radius: 5px;
+  /* background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/bg7.png); */
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--light);
+  text-transform: capitalize;
+  letter-spacing: 1.4px;
+}
+
+.showcase p {
+  font-size: 1.2rem;
+  color: var(--light);
+  margin-top: 0;
+  text-transform: capitalize;
+  letter-spacing: 1.4px;
+}
+
+/* top box */
+.top-box {
+  background: var(--sage2);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  padding: 1.2rem;
+}
+
+.top-box .price {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+.top-box h4 {
+  font-size: 1.5rem;
+  color: var(--primary);
+
+  text-transform: capitalize;
+}
+
+/* boxes */
+
+.boxes,
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 2rem 0 2rem 0;
+}
+
+.box {
+  border-radius: 5px;
+  text-align: center;
+  background: var(--sage2);
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+.box h3,
+p {
+  color: var(--dark);
+}
+.box:hover {
+  background: var(--primary);
+  transition: 2s
+  /* color: var(--light); */
+}
+.fas {
+  color: var(--dark);
+}
+
+/* imfo */
+.info {
+  margin-top: 2rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  background: var(--sage2);
+
+}
+/* portfolio */
+/* .portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px 3fr));
+} */
+
+.portfolio img {
+  /* width: 30%; */
+  box-shadow: var(--shadow);
+  width: 200px;
+}
+/* footer */
+footer {
+  margin-top: 2rem;
+  background-color: var(--sage2);
+  border-radius: 5px;
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}

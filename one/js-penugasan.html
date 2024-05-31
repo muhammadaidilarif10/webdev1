@@ -1,0 +1,28 @@
+<h1>Lorem ipsum dolor sit.</h1>
+<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam.</h5>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<button type="button" id="button">Here.</button>
+
+<script>
+  document.getElementById("button").addEventListener("click", function () {
+    alert("hallo world");
+  });
+
+  let x = 100;
+  let y = 100 + x;
+
+  document.getElementById("demo").innerHTML = "hasil nya adalah " + y;
+
+  let text = "bagaimana kabarmu brother? ";
+  text += "i'm fine brow...";
+
+  document.getElementById("demo2").innerHTML = "maybe hasilnya? " + text;
+
+  let R = 20;
+  R **= 5;
+  document.getElementById("demo3").innerHTML = "maybe hasilnya? " + R;
+</script>

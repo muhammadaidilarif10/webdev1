@@ -1,0 +1,24 @@
+<h1>this is operator javascript</h1>
+<h2>berikut adalah contoh nya...</h2>
+
+<button type="button" id="tombol" style="color: red; background-color: green;">tombol</button>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+  document.getElementById('tombol').addEventListener('click', function () {
+    alert('hello world');
+  });
+
+  let name1 = "muhammad";
+  let name2 = "aidil";
+  let name3 = "arif";
+  let name4 = name1 + name2 + name3;
+  document.getElementById('demo').innerHTML = name4;
+
+  let text1 = "where you from? ";
+  text1 += "im from kanada brow";
+
+  document.getElementById('demo2').innerHTML = text1;
+</script>
